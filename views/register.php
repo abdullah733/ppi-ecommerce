@@ -32,8 +32,6 @@
     </div>
 </nav>
 
-
-
     <main class="my-form">
         <div class="cotainer">
             <div class="row justify-content-center">

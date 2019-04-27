@@ -16,8 +16,8 @@ require_once 'vendor\autoload.php';
 //echo "<hr>";
 $parser =new  RouteParser();
 $router = new RouteCollector($parser);
-$router->controller('/home', \App\controller\HomeController::class ) ;
-$router->controller('/', \App\controller\HomeController::class ) ;
+ require_once __DIR__.'/routes.php';
+
 
 $dispatcher = new Dispatcher($router->getData());
 try {
