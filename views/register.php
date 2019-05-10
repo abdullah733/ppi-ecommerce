@@ -7,9 +7,11 @@
     <title><?php echo $title ?? 'PPI Ecommerce'; ?></title>
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/RegistrationForm.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
+<?php require_once 'partials/_header.php';?>
 <nav class="navbar navbar-expand-lg navbar-light navbar-laravel">
     <div class="container">
 
@@ -21,16 +23,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="login.php">Login</a>
+                    <a class="nav-link" href="/login">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="RegistrationForm.php">Register</a>
+                    <a class="nav-link" href="/register">Register</a>
                 </li>
             </ul>
 
         </div>
     </div>
 </nav>
+
+<!--<div class="container">-->
+<!---->
+<!--    --><?php
+//
+//    if ($message):
+//        ?>
+<!--        <div class="alert alert-success">-->
+<!--            --><?php
+//            echo $message;
+//            ?>
+<!--        </div>-->
+<!--    --><?php //endif; ?>
 
     <main class="my-form">
         <div class="cotainer">
@@ -127,4 +142,6 @@
 </div>
 
 </main>
+
+<?php require_once 'partials/_footer.php';?>
 </body>

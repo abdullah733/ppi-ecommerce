@@ -1,10 +1,13 @@
 
 <?php
-function view()
+function view($file='index')
 {
-
+     require_once __DIR__.'/../views/'.$file.'.php';
 }
-function ()
+function dd($var)
 {
-
+   echo '<pre>';
+   var_dump($var);
+   echo '</pre>';
+   die();
 }
